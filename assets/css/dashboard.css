@@ -1,0 +1,25 @@
+.navbar{
+  background-color: rgb(124, 133, 133);
+}
+.navbar .navbar-brand{
+  color: white;
+}
+#body {
+  background-size: cover;      /* Biar fotonya menutupi seluruh layar */
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../images/backiee-194876-landscape.jpg);
+  display: flex;
+  justify-content: center;  /* Tengahkan horizontal */
+  align-items: center;      /* Tengahkan vertikal */
+  min-height: 100vh;            /* Buat tinggi halaman penuh layar */
+  margin: 0;                /* Hilangkan margin default browser */
+}
+#menu-nav{
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    font-size: 18px;
+
+}

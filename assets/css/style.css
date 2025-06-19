@@ -8,12 +8,16 @@
   background-size: cover;      /* Biar fotonya menutupi seluruh layar */
   background-repeat: no-repeat;
   background-position: center;
+  font-family: 'Poppins', sans-serif;
   background-image: url(../images/backiee-194876-landscape.jpg);
   display: flex;
   justify-content: center;  /* Tengahkan horizontal */
   align-items: center;      /* Tengahkan vertikal */
   min-height: 100vh;            /* Buat tinggi halaman penuh layar */
   margin: 0;                /* Hilangkan margin default browser */
+}
+#judul-form{
+  padding:2px 12px 40px 12px;
 }
 .box-login {
   width: 100%;
