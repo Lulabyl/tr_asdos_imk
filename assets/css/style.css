@@ -8,7 +8,7 @@
   background-size: cover;      /* Biar fotonya menutupi seluruh layar */
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(assets/images/backiee-194876-landscape.jpg);
+  background-image: url(../images/backiee-194876-landscape.jpg);
   display: flex;
   justify-content: center;  /* Tengahkan horizontal */
   align-items: center;      /* Tengahkan vertikal */
