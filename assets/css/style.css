@@ -1,0 +1,51 @@
+.navbar{
+  background-color: rgb(124, 133, 133);
+}
+.navbar .navbar-brand{
+  color: white;
+}
+#body {
+  background-size: cover;      /* Biar fotonya menutupi seluruh layar */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/assets/images/backiee-194876-landscape.jpg);
+  display: flex;
+  justify-content: center;  /* Tengahkan horizontal */
+  align-items: center;      /* Tengahkan vertikal */
+  min-height: 100vh;            /* Buat tinggi halaman penuh layar */
+  margin: 0;                /* Hilangkan margin default browser */
+}
+.box-login {
+  width: 100%;
+  max-width: 400px;         /* Atur lebar maksimum agar tidak terlalu lebar */
+  padding: 20px;
+  background-color: #f8f9fa; /* Warna latar (opsional) */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bayangan halus */
+}
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 30px; /* jarak antar gambar dan form */
+  padding: 20px;
+  flex-wrap: wrap; /* biar tetap responsif */
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+  width: 600px; /* atur lebar gambar sesuai kebutuhan */
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+      .login-wrapper {
+    flex-direction: column;   /* 👈 Elemen jadi vertikal */
+  }
+  .login-image img {
+    width: 100%;              /* Atur ulang agar muat layar kecil */
+    max-width: 600px;
+  }
+}
