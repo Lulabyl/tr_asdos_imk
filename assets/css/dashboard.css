@@ -98,8 +98,70 @@ body {
 }
 
 .table {
-  background-color: white;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
 }
+
+.table thead {
+  background-color: #343a40;
+  color: white;
+  border-radius: 8px;
+}
+
+.table thead th {
+  padding: 16px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.table tbody tr {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.table tbody tr:hover {
+  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.table tbody td {
+  padding: 16px;
+  font-size: 15px;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  .my-table {
+    font-size: 12px;
+  }
+
+  .my-table th,
+  .my-table td {
+    padding: 6px;
+  }
+}
+  #button {
+    position: fixed;
+    bottom: 20px;   /* Jarak dari bawah */
+    right: 20px;    /* Jarak dari kanan */
+    z-index: 9999;  /* Supaya di atas elemen lain */
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #button:hover {
+    background-color: rgba(40, 40, 40, 0.8);
+  }
+  #button img {
+    width: 32px;
+    height: auto;
+  }
