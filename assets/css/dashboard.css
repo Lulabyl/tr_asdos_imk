@@ -1,9 +1,21 @@
-.navbar{
-  background-color: rgb(124, 133, 133);
+.navbar {
+  background-color: rgba(40, 40, 40, 0.8); /* agak gelap & semi transparan */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* bayangan bawah */
+  backdrop-filter: blur(8px); /* blur efek glassmorphism (opsional) */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* garis pemisah halus */
 }
 .navbar .navbar-brand{
   color: white;
 }
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important; /* atau ganti warna lain sesuai tema */
+  text-shadow: 0 0 4px rgba(255, 193, 7, 0.4);
+}
+
 body {
   background-size: cover;      /* Biar fotonya menutupi seluruh layar */
   background-repeat: no-repeat;
@@ -39,13 +51,34 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bayangan halus */
   flex: 1 1 300px; /* responsive */
   max-width: 380px;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.container-content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+.container-content:nth-child(1) {
+  border-left: 6px solid #28a745; /* hijau untuk income */
+}
+.container-content:nth-child(2) {
+  border-left: 6px solid #dc3545; /* merah untuk outcome */
+}
+.container-content:nth-child(3) {
+  border-left: 6px solid #ffc107; /* kuning untuk balance */
+}
 .content-title {
-  font-size: 32px;
-  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
   text-align: left;
   padding-bottom: 50px;
+}
+.nominals {
+  font-size: 20px;
+  font-weight: 500;
+  color: #444;
 }
 
 .icon {
