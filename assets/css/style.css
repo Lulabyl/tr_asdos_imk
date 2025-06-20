@@ -10,6 +10,7 @@
   background-position: center;
   font-family: 'Poppins', sans-serif;
   background-image: url(../images/backiee-194876-landscape.jpg);
+  /* background-color: #F5F5F5; */
   display: flex;
   justify-content: center;  /* Tengahkan horizontal */
   align-items: center;      /* Tengahkan vertikal */
