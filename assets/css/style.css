@@ -1,20 +1,23 @@
 .navbar {
-  background-color: rgba(40, 40, 40, 0.8); /* agak gelap & semi transparan */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* bayangan bawah */
-  backdrop-filter: blur(8px); /* blur efek glassmorphism (opsional) */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* garis pemisah halus */
+  background-color: rgba(40, 40, 40, 0.8);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.navbar .navbar-brand{
+
+.navbar .navbar-brand {
   color: white;
 }
+
 .nav-link {
   transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #ffc107 !important; /* atau ganti warna lain sesuai tema */
+  color: #ffc107 !important;
   text-shadow: 0 0 4px rgba(255, 193, 7, 0.4);
 }
+
 body {
   background-image: url(../images/backiee-194876-landscape.jpg);
   background-size: cover;
@@ -26,40 +29,43 @@ body {
   margin: 0;
 }
 
-#judul-form{
-  padding:2px 12px 40px 12px;
+#judul-form {
+  padding: 2px 12px 40px 12px;
 }
+
 .box-login {
   width: 100%;
-  max-width: 400px;         /* Atur lebar maksimum agar tidak terlalu lebar */
+  max-width: 400px;
   padding: 20px;
-  background-color: #f8f9fa; /* Warna latar (opsional) */
+  background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bayangan halus */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .login-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  gap: 30px; /* jarak antar gambar dan form */
+  gap: 30px;
   padding: 20px;
-  flex-wrap: wrap; /* biar tetap responsif */
+  flex-wrap: wrap;
 }
 
 .login-image img {
   max-width: 100%;
   height: auto;
-  width: 600px; /* atur lebar gambar sesuai kebutuhan */
+  width: 600px;
   border-radius: 10px;
 }
 
 @media (max-width: 576px) {
-      .login-wrapper {
-    flex-direction: column;   /* 👈 Elemen jadi vertikal */
+  .login-wrapper {
+    flex-direction: column;
   }
+
   .login-image img {
-    width: 100%;              /* Atur ulang agar muat layar kecil */
+    width: 100%;
     max-width: 600px;
   }
 }

@@ -1,35 +1,47 @@
 .navbar {
-  background-color: rgba(40, 40, 40, 0.8); /* agak gelap & semi transparan */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* bayangan bawah */
-  backdrop-filter: blur(8px); /* blur efek glassmorphism (opsional) */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* garis pemisah halus */
+  background-color: rgba(40, 40, 40, 0.8);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.navbar .navbar-brand{
+
+body, .navbar, .nav-link {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar,
+.navbar * {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.navbar .navbar-brand {
   color: white;
 }
+
 .nav-link {
   transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #ffc107 !important; /* atau ganti warna lain sesuai tema */
+  color: #ffc107 !important;
   text-shadow: 0 0 4px rgba(255, 193, 7, 0.4);
 }
 
 body {
-  background-size: cover;      /* Biar fotonya menutupi seluruh layar */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'Poppins', sans-serif;
   background-image: url(../images/backiee-194876-landscape.jpg);
-  min-height: 100vh;            /* Buat tinggi halaman penuh layar */
-  margin: 0;                /* Hilangkan margin default browser */
+  min-height: 100vh;
+  margin: 0;
 }
-#menu-nav{
-    padding-top:12px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    font-size: 18px;
+
+#menu-nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  font-size: 18px;
 }
 
 .container {
@@ -48,25 +60,30 @@ body {
   border-radius: 24px;
   padding: 16px;
   box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bayangan halus */
-  flex: 1 1 300px; /* responsive */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
   max-width: 380px;
   background-color: rgba(255, 255, 255, 0.85);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .container-content:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
+
 .container-content:nth-child(1) {
-  border-left: 6px solid #28a745; /* hijau untuk income */
+  border-left: 6px solid #28a745;
 }
+
 .container-content:nth-child(2) {
-  border-left: 6px solid #dc3545; /* merah untuk outcome */
+  border-left: 6px solid #dc3545;
 }
+
 .container-content:nth-child(3) {
-  border-left: 6px solid #ffc107; /* kuning untuk balance */
+  border-left: 6px solid #ffc107;
 }
+
 .content-title {
   font-size: 28px;
   font-weight: 700;
@@ -75,6 +92,7 @@ body {
   text-align: left;
   padding-bottom: 50px;
 }
+
 .nominals {
   font-size: 20px;
   font-weight: 500;
@@ -89,6 +107,7 @@ body {
   height: 60px;
   width: auto;
 }
+
 .table-wrapper {
   margin-top: 40px;
   padding: 0 24px;
@@ -136,6 +155,26 @@ body {
   border-top: 1px solid #eee;
 }
 
+.remove-btn {
+  display: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.table-row-wrapper {
+  position: relative;
+}
+
+.table-row-wrapper:hover .remove-btn {
+  display: inline;
+}
+
 @media (max-width: 600px) {
   .my-table {
     font-size: 12px;
@@ -146,22 +185,25 @@ body {
     padding: 6px;
   }
 }
-  #button {
-    position: fixed;
-    bottom: 20px;   /* Jarak dari bawah */
-    right: 20px;    /* Jarak dari kanan */
-    z-index: 9999;  /* Supaya di atas elemen lain */
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #button:hover {
-    background-color: rgba(40, 40, 40, 0.8);
-  }
-  #button img {
-    width: 32px;
-    height: auto;
-  }
+
+#button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button:hover {
+  background-color: rgba(40, 40, 40, 0.8);
+}
+
+#button img {
+  width: 32px;
+  height: auto;
+}
